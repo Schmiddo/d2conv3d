@@ -1,0 +1,4 @@
+# @package _group_
+name: resnet50_csn_ir
+replace_norm_layer: False
+weights: "${paths.save_dir}/backbones/irCSN50.pth"

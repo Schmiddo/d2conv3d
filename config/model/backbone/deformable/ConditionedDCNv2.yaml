@@ -1,0 +1,4 @@
+# @package _group_
+version: ConditionedDCNv2
+layers: ["layer4"]
+conditioning: "size"

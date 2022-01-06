@@ -1,0 +1,6 @@
+# @package _group_
+name: resnet152_csn_ir
+replace_norm_layer: True
+norm_layer: FrozenBatchNorm
+norm_layer_eps: 1e-3
+weights: "${paths.save_dir}/backbones/irCSN_152_ft_kinetics_from_ig65m_f126851907.pth"

@@ -1,0 +1,3 @@
+# @package _group_
+data_dir: "${env:SOURCE_DIR}/data"
+work_dir: "${env:SOURCE_DIR}"

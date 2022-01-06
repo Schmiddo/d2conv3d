@@ -1,0 +1,3 @@
+# @package _group_
+name: resnet50
+weights: "${paths.save_dir}/backbones/r3d50.pth"

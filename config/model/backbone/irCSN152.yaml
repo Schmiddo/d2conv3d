@@ -1,0 +1,4 @@
+# @package _group_
+name: resnet152_csn_ir
+replace_norm_layer: False
+weights: "${paths.save_dir}/backbones/irCSN_152_ft_kinetics_from_sports1m_f101599884.pth"

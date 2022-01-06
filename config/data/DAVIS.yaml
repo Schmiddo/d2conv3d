@@ -1,0 +1,19 @@
+# @package _group_
+batch_size: 32
+num_workers: 12
+augmentations: ["random_horizontal_flip"]
+train:
+  name: DAVIS
+  root: "${paths.data_dir}/DAVIS"
+  resize_mode: fixed_size
+  resize_shape: [480, 854]
+  mode: train
+  clip_size: "${model.tw}"
+test:
+  name: DAVIS
+  root: "${paths.data_dir}/DAVIS"
+  resize_mode: fixed_size
+  resize_shape: [480, 854]
+  mode: val
+  clip_size: "${model.tw}"
+model.num_classes: 2

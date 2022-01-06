@@ -1,0 +1,3 @@
+# @package _group_
+version: SpatialDCNv1
+layers: ["rf3"]
