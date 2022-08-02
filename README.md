@@ -32,9 +32,13 @@ ln -s libopenh264.so libopenh264.so.5
 You can set the environment variable `DATA` to point to the directory where DAVIS is located, or modify `config/paths/default.yaml`. These paths should be absolute.
 See `config/defaults.py` for all configuration options.
 
-By default, backbone weights are expected in `./saved_models/backbones`.
+By default, backbone weights are expected in `./saved_models/backbones` .
 Download the backbone weights (ir-CSN-152, pretrained on Sports1M, finetuned on Kinetics) from [this site](https://github.com/facebookresearch/VMZ/blob/main/c2/tutorials/model_zoo.md) and put it in the backone folder.
-
+You can convert these weights with the `convert_csn_weights.py` script:
+```shell
+python convert_csn_weights.py <path-to-downloaded-weights>.pkl <arch>
+```
+where `<arch>`is one of `resnet50_csn_ir`, `resnet152_csn_ir`, `resnet152_csn_ip`, depending on what want to convert.
 
 ## Running the code
 Example run scripts are provided in `run_scripts`.
